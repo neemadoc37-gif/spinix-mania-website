@@ -55,4 +55,14 @@ footer{background:#281044;color:white;padding:38px 0}footer p,footer a{color:#d8
 <footer><div class="wrap"><div class="brand" style="color:white">✦ SPINIX MANIA</div><p>Discover • Unbox • Enjoy<br>A bright new experience, built with transparency at its heart.</p><p><a href="#boxes">Mystery Boxes</a><a href="#how">How it works</a><a href="#faq">FAQs</a></p><div class="copyright">© <span id="year"></span> SPINIX MANIA. Preview website — no real-money transactions or paid draws are enabled.</div></div></footer>
 <div class="modal" id="modal"><div class="dialog"><button class="close" onclick="closeBox()">×</button><h3 id="modalTitle">SPINIX Mystery Box</h3><p>This box is part of the website preview. Purchasing and paid chance-based features are not enabled. Final prices, prize details, odds and official terms will be shown before any approved launch.</p><button class="btn primary" onclick="closeBox()">Got it</button></div></div>
 <script>document.getElementById('year').textContent=new Date().getFullYear();function showBox(n){document.getElementById('modalTitle').textContent=n+' Mystery Box';document.getElementById('modal').classList.add('show')}function closeBox(){document.getElementById('modal').classList.remove('show')}</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = "https://lkhbsquoghdfllcunwx.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_uYsqtYSHMXvQ4wcudxbMng_Ifps-jS7";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+</script>
 </body></html>
